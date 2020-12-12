@@ -272,15 +272,29 @@ p{
 
 .modal{
     position: absolute;
-    top: 50%;
+    top:221px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     min-width: 528px;
     min-height: 581px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
+.close-btn{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px; 
+    background-color: #FFFFFF;
+}
+
+
+.lose-position{
+    display: flex;
+}
+
 
 
 .backdrop.is-hidden{
@@ -443,7 +457,9 @@ position: relative;
     height: 44px;
     background-color: #FFFFFF;
     border-radius: 50%;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    transition-property: background-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon{
@@ -578,7 +594,9 @@ position: relative;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    transition-property: background-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -638,7 +656,10 @@ position: relative;
     background: #F5F4FA;
     border-radius: 4px;
     border: none;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: filter;
+    transition-property: color;
+    transition-property: background-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     
 }
@@ -653,6 +674,7 @@ position: relative;
     color: var(--white-color);
     background-color: var(--accent-color);
     cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     
 }
 
@@ -725,6 +747,12 @@ position: relative;
 .projects .link:hover .project-overlay,
 .projects .link:focus .project-overlay{
     transform: translateY(0%);
+}
+
+.projects .item:hover ,
+.projects .item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
 }
 
 .projects .link{
