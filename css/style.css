@@ -640,6 +640,21 @@ position: relative;
 
 /* projects */
 
+.site-nav .link.current{
+    color: var(--accent-color);
+} 
+
+.site-nav .link.current::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -14px;
+}
+
 
 .portfolio-menu{
     padding-top: 94px;
